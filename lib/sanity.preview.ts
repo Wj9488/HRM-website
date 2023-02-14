@@ -1,0 +1,17 @@
+"use client"
+
+import {definePreview} from 'next-sanity/preview'
+import {projectId, dataset} from './sanity.client'
+
+function onPublicAccessOnly() {
+  throw new Error(`Unable to load preview as you're not logged in`)
+}
+
+if (!projectId || !dataset) {
+  throw new Error(
+    "There's a missing projectId or dataset. Check your sanity.json or .env file."
+  )
+}
+
+export const usePreview = definePreview({projectId, dataset, onPublicAccessOnly})
+
