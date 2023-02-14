@@ -49,7 +49,6 @@ async function Post({params: {slug}}: Props) {
                   year: "numeric",
                 })}
               </p>
-              {/* <p className="mt-2">Author: {post.author.name}</p> */}
             </div>
         </section>
 
