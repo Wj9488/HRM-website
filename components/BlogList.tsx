@@ -37,7 +37,7 @@ function BlogList({posts}: Props) {
       </div>
       <div className="flex justify-between items-center mt-12">
           <p className="dark:text-white text-neutral-900 text-sm">STUDENT ID</p>
-          <p className="dark:text-white text-neutral-900 text-sm">710041566</p>
+          <p className="dark:text-white text-neutral-900 text-sm">0000000000</p>
       </div>
     </div>
   )
